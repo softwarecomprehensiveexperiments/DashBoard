@@ -14,7 +14,7 @@ title: 关于项目
 | v1.0 | 2019-4-13 | 正在编写 | chenjifan |
 
 ## 1、项目简介
-![测试用途]（/images/01_for_test.png）
+![测试用途](/images/01_for_test.png)
 
 ## 2、重要分析设计文档
 
