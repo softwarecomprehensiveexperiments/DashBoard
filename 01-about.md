@@ -14,41 +14,55 @@ title: 关于项目
 | v1.0 | 2019-4-13 | 正在编写 | chenjifan |
 
 ## 1、项目简介
-![测试用途](/images/01_for_test.png)
+**闲钱袋鼠**是一个微信小程序，主营学生之间日常生活中一些小任务的发布和完成。
 
-## 2、重要分析设计文档
+* 功能：
+它以微信作为入口，用户既可以作为发布者在上面发布任务寻求帮助，也可浏览他人的任务并完成来获取一定报酬。
 
-* [需求规格说明书](06-requirements)
-* [软件设计说明书](07-designs)
-* [产品演示视频]()
+* 产品特点：
+1. 任务多样，包括：实际生活中的事项，填写调查问卷，信息等资源有偿分享。
+2. 支持代币免费提现到微信，赚取报酬看得见。
+3. 操作简单，任务迅速发布，无需审核，效率至上。
+4. 只支持在校学生使用，使用学号、姓名、手机信息就可以快速注册成为新用户，界面、任务种类等设计紧密贴合大学生群体。
+5. 
 
 
-## 3、敏捷开发迭代管理与大事纪
+## 2、界面展示
+（暂无）
 
-建议你给出每个迭代的看板任务安排。看板建议使用 [Git Project](https://github.com/orgs/rookies-sysu/projects?query=is%3Aclosed) ，看板任务通常包括以下几类：
+## 3、重要分析设计文档
 
-* 需求分析任务，包括业务调查、产品策划、需求文档编写、原型设计
-* 设计与开发任务，包括原型验证、数据库设计、架构设计、框架搭建、模块设计、模块编码
-* 测试与 DevOps 任务，包括各类开发规范组织、开发与测试环境与工具、CI/CD 实施
-* 技术学习或其他任务。
+* [需求规格说明书（暂无）](06-requirements)
+* [软件设计说明书（暂无）](07-designs)
+* [产品演示视频（暂无）]()
 
-以下是每个迭代任务规划的模板：
+## 4、项目结构
+* 微信小程序前端：
+（暂无）
+* 服务器端
+（暂无）
 
-* Inceptions
-    - goal: 
-    - 前期工作：
-        - 产品调查：xxx
-        - 团队组织
-    - 项目启动会议：所有人
-    - 项目愿景等文档： 
-    - XX业务故事板设计: 
-* Iteration 1 (3 weeks from yy.mm.dd to yy.mm.dd)
-    - goals:
-        - makes tech prototype for something
-        - builds a proto system to demostrate core scene
-        - collects 50% requirments scene stories
-    - milestones
-        - tick-off meeting 99/1/28
+## 5、敏捷开发迭代管理
 
+#### Iteration 1
+* goals:
+    - makes tech prototype for something
+    - builds a proto system to demostrate core scene
+    - collects 50% requirments scene stories
+* week8：
+
+* week9：
+
+* week10：
+
+#### Inceptions（week6~7）
+* goal: 完成产品设计
+* 前期工作：
+    - 产品调查
+    - 团队组织
+    - 需求分析
+    - 架构等设计
+* 项目启动会议：所有人
+* 项目愿景等文档：产品经理
         
 
