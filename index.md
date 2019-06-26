@@ -15,8 +15,8 @@ layout: default
     - 6.1 [Usecase Diagram and UML Activity Diagram](06-useCase)（用例图，业务过程/多泳道图）
     - 6.2 [Use Cases](06-activity)（用例+活动图）
     - 6.3 [Domian Models](06-domain)（领域模型）
-    - 6.4 [State Models](06-state)（状态模型）
-    - 6.5 [System Sequence Diagrams](06-sequence)（功能模型）
+    - 6.4 [State Models](https://github.com/softwarecomprehensiveexperiments/DashBoard/06-state.md)（状态模型）
+    - 6.5 [System Sequence Diagrams](https://github.com/softwarecomprehensiveexperiments/DashBoard/06-sequence.md)（功能模型）
     - 6.6 [Supplementary Requirements]（补充需求）
 * 7、[Design](07-designs)（设计说明书）
     - 7.1 UI design（界面设计）
