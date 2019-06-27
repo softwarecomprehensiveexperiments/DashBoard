@@ -1,80 +1,37 @@
-文章目录
-
-    前端开发规范文档
-        一、WXML 规范
-            1. 属性顺序(不必要的情况下)
-            2. `id` / `class` 命名规则
-            3. WXML 注释规范
-        二、`CSS` 规范
-            属性顺序
-            选择器
-            属性使用缩写
-            去掉小数点前面的 0
-        三、 `JS` 规范
-            1. 语言规范
-            2. 使用分号
-            3. 块内函数声明
-            4. 关于循环
-                4.1 `forEach`
-                4.2 `map`
-                4.3 `for-in`
-                4.4 `for-of`
-            5. 命名规范
-            6. 声明
-            7. 回调函数规范
-            8. 数据绑定变量定义规范
-            9. 函数默认值
-        三、组件规范
-            1. 组件名命名规范
-            2. 触发事件规范
-            3. externalClasses 命名规范
-            4. 组件样式规范
-        四、标点规范
-        五、注释规范
-
 前端开发规范文档
 一、WXML 规范
 1. 属性顺序(不必要的情况下)
 
-    class ( class 是为高可复用组件设计的,所以应处在第一位)
-    id name (id 更加具体且应该尽量少使用,所以将它放在第二位)
-    data-\*
-    src for type href value
-    placeholder title alt
-    aria-\* role
-    required readonly disabled
+        class ( class 是为高可复用组件设计的,所以应处在第一位)
+        id name (id 更加具体且应该尽量少使用,所以将它放在第二位)
+        data-\*
+        src for type href value
+        placeholder title alt
+        aria-\* role
+        required readonly disabled
 
 2. id / class 命名规则
 
-    首先根据内容命名,如 header footer
-    若根据内容无法找到合适的命名,再结合行为表现进行辅助, e.g. col-main blue-box
-    名字一律小写,多个单词用 - 连接,不能使用下划线和 camel1 命名法, e.g. main-title 可基于最近的父元素名称作为前缀
-    在不影响语义的情况下,可适当使用缩写,但是缩写只用来表示结构, e.g. col nav btn etc. , 别给我自编.
-    避免广告拦截词汇 e.g. ad ads adv banner sponsor gg guangg guanggao etc.
+        首先根据内容命名,如 header footer
+        若根据内容无法找到合适的命名,再结合行为表现进行辅助, e.g. col-main blue-box
+        名字一律小写,多个单词用 - 连接,不能使用下划线和 camel1 命名法, e.g. main-title 可基于最近的父元素名称作为前缀
+        在不影响语义的情况下,可适当使用缩写,但是缩写只用来表示结构, e.g. col nav btn etc. , 别给我自编.
+        避免广告拦截词汇 e.g. ad ads adv banner sponsor gg guangg guanggao etc.
 
 3. WXML 注释规范
 
-<!-- 头部 -->
-<view class="header">
-  <!-- LOGO -->
-  <image class="logo"></image>
-  <!-- /LOGO -->
-  <!-- 详情 -->
-  <view class="detail"> </view>
-  <!-- /详情 -->
-</view>
-<!-- /头部 -->
+        <!-- 头部 -->
+        <view class="header">
+          <!-- LOGO -->
+          <image class="logo"></image>
+          <!-- /LOGO -->
+          <!-- 详情 -->
+          <view class="detail"> </view>
+          <!-- /详情 -->
+        </view>
+        <!-- /头部 -->
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
+
 
 二、CSS 规范
 属性顺序
@@ -118,37 +75,7 @@
     }
     /* End Button */
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-    14
-    15
-    16
-    17
-    18
-    19
-    20
-    21
-    22
-    23
-    24
-    25
-    26
-    27
-    28
-    29
-    30
-    31
+
 
 选择器
 
@@ -170,17 +97,12 @@
     优先使用箭头函数
     使用模板字符串取代连接字符串
 
-    // worst
-    let url = "pages/index/index?id=" + id + "&title=321GO"
+        // worst
+        let url = "pages/index/index?id=" + id + "&title=321GO"
 
-    //best
-    let url = `pages/index/index?id=${id}&title=321GO`
+        //best
+        let url = `pages/index/index?id=${id}&title=321GO`
 
-    1
-    2
-    3
-    4
-    5
 
 2. 使用分号
 
@@ -190,23 +112,19 @@
 
     不要在块内声明一个函数,e.g.
 
-    if (x) {
-        function zxm() {}
-    }
+        if (x) {
+            function zxm() {}
+        }
 
-    1
-    2
-    3
+
 
     如果确实需要,使用函数表达式来初始化变量
 
-    if (x) {
-        let foo = function() {}
-    }
+        if (x) {
+            let foo = function() {}
+        }
 
-    1
-    2
-    3
+
 
 4. 关于循环
 4.1 forEach
@@ -249,42 +167,7 @@
         console.log(zxmArray[i]);//3 2 1 GO 男 f(){}
     }
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-    14
-    15
-    16
-    17
-    18
-    19
-    20
-    21
-    22
-    23
-    24
-    25
-    26
-    27
-    28
-    29
-    30
-    31
-    32
-    33
-    34
-    35
-    36
+
 
     forEach 不支持 break continue
 
@@ -297,16 +180,9 @@
             continue;
     });
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
 
-    forEach 过程中 arr.push() arr.pop() arr.shift() arr.unshift() arr.reverse() arr.sort() arr.concat() 都可以使用,但是arr.push() 不会改变输出顺序.
+
+forEach 过程中 arr.push() arr.pop() arr.shift() arr.unshift() arr.reverse() arr.sort() arr.concat() 都可以使用,但是arr.push() 不会改变输出顺序.
 
 4.2 map
 
@@ -326,19 +202,7 @@
     let tempAdd = zxmAdd.map(add);
     console.log(tempAdd)//​​​​ ​[ 13, 12, 11 ]​​​​​
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
+
 
 4.3 for-in
 
@@ -371,37 +235,11 @@
     })
 
     for (var prop in zxmObj) {
-        console.log("zxmObj." + prop + " = " + zxmObj[prop]);//​​​​​zxmObj.a = 3 ​​​​​zxmObj.b = 2​​​​​ zxmObj.c = 1​​​​​ ​​​​​zxmObj.d = GO zxmObj.address = Xtep
+        console.log("zxmObj." + prop + " = " + zxmObj[prop]);
+        //zxmObj.a = 3 zxmObj.b = 2 zxmObj.c = 1
+        zxmObj.d = GO zxmObj.address = Xtep
     }
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-    14
-    15
-    16
-    17
-    18
-    19
-    20
-    21
-    22
-    23
-    24
-    25
-    26
-    27
-    28
 
     for–in 是用来循环带有字符串 key 的对象的方法
 
@@ -416,10 +254,7 @@
         console.log(value);// 3 2 1 GO
     }
 
-    1
-    2
-    3
-    4
+
 
     for-of 循环字符串
 
@@ -429,11 +264,7 @@
         console.log(value);// 3 2 1 G O
     }
 
-    1
-    2
-    3
-    4
-    5
+
 
     for-of 循环类型化的数组
 
@@ -443,11 +274,7 @@
     console.log(value);// 0 255
     }
 
-    1
-    2
-    3
-    4
-    5
+
 
     for-of 循环 Map
 
@@ -467,21 +294,7 @@
         console.log(entry);// ["a", 1] ["b", 2] ["c", 1] [{d:"address"}, "GO"]
     }
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-    14
-    15
+
 
     for-of 循环 set
 
@@ -491,11 +304,7 @@
         console.log(value);
     }
 
-    1
-    2
-    3
-    4
-    5
+
 
     for-of 循环拥有 enumerable 属性的对象,但是并不能直接使用在普通的对象上,如果我们按对象所拥有的属性进行循环,可使用内置的 Object.keys()7 方法
 
@@ -513,28 +322,9 @@
         value: 'Xtep'
     })
 
-    for (var prop of Object.keys(zxmObj)) {
-        console.log("zxmObj." + prop + " = " + zxmObj[prop]);//​​​​​zxmObj.a = 3 ​​​​​zxmObj.b = 2​​​​​ zxmObj.c = 1​​​​​ ​​​​​zxmObj.d = GO zxmObj.address = Xtep
-    }
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-    14
-    15
-    16
-    17
-    18
+
+   
 
     for-of 循环生成器 ( generators ) 然鹅微信小程序并不支持 async await 也不支持
 
@@ -554,21 +344,6 @@
     }
     }
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
-    14
-    15
 
 5. 命名规范
 
@@ -599,63 +374,39 @@
 
     回调函数统一使用 Promise 函数,回调成功的参数统一为 res,错误参数为 err
 
-    let callback = new Promise((resolve, reject) => {
-        if (/* 异步操作成功 */){
-            resolve(value);
-        } else {
-            reject(err);
-        }
-    });
+        let callback = new Promise((resolve, reject) => {
+            if (/* 异步操作成功 */){
+                resolve(value);
+            } else {
+                reject(err);
+            }
+        });
 
-    callback.then((res) => {
-        console.log('成功回调！', res);
-    }).catch((err) => {
-        console.log('失败回调！', err);
-    });
+        callback.then((res) => {
+            console.log('成功回调！', res);
+        }).catch((err) => {
+            console.log('失败回调！', err);
+        });
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
+
 
     私有函数以及回调函数统一放置在生命周期函数后,每个函数之间用一个空行分离结构,删除 js 文件中未用到的生命周期函数,保持代码的整洁,精简
 
-    Pages({
-        data:{
+          Pages({
+                data:{
 
-        },
+            },
 
-        onLoad:function(event){
+            onLoad:function(event){
 
-        },
+            },
 
-        _self:function(){
+            _self:function(){
 
-        }
-    })
+            }
+        })
 
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    11
-    12
-    13
+
 
 8. 数据绑定变量定义规范
 
@@ -666,13 +417,11 @@
 
     所有的函数参数的默认值要写在参数后面
 
-    function zxm(name = 'zxm'){
-        console.log(name)
-    }
+        function zxm(name = 'zxm'){
+            console.log(name)
+        }
 
-    1
-    2
-    3
+
 
 三、组件规范
 1. 组件名命名规范
