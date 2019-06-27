@@ -36,59 +36,59 @@
 二、CSS 规范
 属性顺序
 
-    位置属性 ( position top right z-index display float etc.)
-    大小 ( width height padding margin etc.)
-    文字系列 ( font line-height letter-spacing color text-align ect.)
-    背景 ( background border etc.)
-    其他 ( animation transition etc.)
-    以及注释的写法
+位置属性 ( position top right z-index display float etc.)
+大小 ( width height padding margin etc.)
+文字系列 ( font line-height letter-spacing color text-align ect.)
+背景 ( background border etc.)
+其他 ( animation transition etc.)
+以及注释的写法
 
-    /* Button */
-    button {
-    /* Positioning */
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
+        /* Button */
+        button {
+        /* Positioning */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
 
-    /* Box-model */
-    display: block;
-    float: right;
-    width: 100px;
-    height: 100px;
+        /* Box-model */
+        display: block;
+        float: right;
+        width: 100px;
+        height: 100px;
 
-    /* Typography */
-    font: normal 13px "Helvetica Neue", sans-serif;
-    line-height: 1.5;
-    color: #333;
-    text-align: center;
+        /* Typography */
+        font: normal 13px "Helvetica Neue", sans-serif;
+        line-height: 1.5;
+        color: #333;
+        text-align: center;
 
-    /* Visual */
-    background-color: #f5f5f5;
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
+        /* Visual */
+        background-color: #f5f5f5;
+        border: 1px solid #e5e5e5;
+        border-radius: 3px;
 
-    /* Misc */
-    opacity: 1;
-    }
-    /* End Button */
+        /* Misc */
+        opacity: 1;
+        }
+        /* End Button */
 
 
 
 选择器
 
-    尽量不用选择器。
+        尽量不用选择器。
 
 属性使用缩写
 
-    尽量使用简写 e.g. padding margin font background border border-radius etc.
-    颜色代码尽量也简写 e.g. 白色 #fff
+        尽量使用简写 e.g. padding margin font background border border-radius etc.
+        颜色代码尽量也简写 e.g. 白色 #fff
 
 去掉小数点前面的 0
 
-    0.8 => .8
+        0.8 => .8
 
 三、 JS 规范
 1. 语言规范
@@ -127,50 +127,51 @@
 
 
 4. 关于循环
+
 4.1 forEach
 
 forEach 过程中 arr.push() arr.pop() arr.shift() arr.unshift() arr.reverse() arr.sort() arr.concat() 都可以使用,但是arr.push() 不会改变输出顺序.
 
 4.2 map
 
-    map() 方法返回一个由原数组中的每个元素调用一个指定方法后的返回值组成的新数组
+        map() 方法返回一个由原数组中的每个元素调用一个指定方法后的返回值组成的新数组
 
-    let zxmArray = [3,2,1,"GO"];
-    let tempArr = zxmArray.map((value,index)=>{
+        let zxmArray = [3,2,1,"GO"];
+        let tempArr = zxmArray.map((value,index)=>{
         console.log(value, index);
         return "zxm" + value
-    })
-    console.log(tempArr)// [ 'zxm3', 'zxm2', 'zxm1', 'zxmGO' ]
+        })
+        console.log(tempArr)// [ 'zxm3', 'zxm2', 'zxm1', 'zxmGO' ]
 
-    function add(num) {
+        function add(num) {
         return num + 10
-    }
-    let zxmAdd = [3,2,1];
-    let tempAdd = zxmAdd.map(add);
-    console.log(tempAdd)//[ 13, 12, 11 ]
+        }
+        let zxmAdd = [3,2,1];
+        let tempAdd = zxmAdd.map(add);
+        console.log(tempAdd)//[ 13, 12, 11 ]
 
 
 
 4.3 for-in
 
-    for-in 循环实际是为循环 enumerable2 对象而设计的
-    configurable3 writable4 enumerable5 value6
+        for-in 循环实际是为循环 enumerable2 对象而设计的
+        configurable3 writable4 enumerable5 value6
 
-    let zxmObj = {
+        let zxmObj = {
         a: 3,
         b: 2,
         c: 1,
         d: "GO"
-    };
+        };
 
-    Object.defineProperty(zxmObj, 'address', {
+        Object.defineProperty(zxmObj, 'address', {
         configurable: false,
         writable: true,
         enumerable: true,
         value: 'Xtep'
-    })
+        })
 
-    Object.defineProperties(zxmObj, {
+        Object.defineProperties(zxmObj, {
         sex: {
             value: '男',
             enumerable: false
@@ -179,103 +180,103 @@ forEach 过程中 arr.push() arr.pop() arr.shift() arr.unshift() arr.reverse() a
             value: 23,
             enumerable: false
         }
-    })
+        })
 
-    for (var prop in zxmObj) {
+        for (var prop in zxmObj) {
         console.log("zxmObj." + prop + " = " + zxmObj[prop]);
         //zxmObj.a = 3 zxmObj.b = 2 zxmObj.c = 1
         zxmObj.d = GO zxmObj.address = Xtep
-    }
+        }
 
 
-    for–in 是用来循环带有字符串 key 的对象的方法
+        for–in 是用来循环带有字符串 key 的对象的方法
 
 4.4 for-of
 
-    墙裂推荐使用 for-of 既比传统的 for 循环简洁,同时弥补了 forEach 和 for-in 循环的缺点
+        墙裂推荐使用 for-of 既比传统的 for 循环简洁,同时弥补了 forEach 和 for-in 循环的缺点
 
-    for-of 循环数组
+        for-of 循环数组
 
-    let zxmArray = [3,2,1,"GO"];
-    for (var value of zxmArray) {
+        let zxmArray = [3,2,1,"GO"];
+        for (var value of zxmArray) {
         console.log(value);// 3 2 1 GO
-    }
+        }
 
-    for-of 循环字符串
+        for-of 循环字符串
 
-    let zxmString = "321GO";
+        let zxmString = "321GO";
 
-    for (let value of zxmString) {
+        for (let value of zxmString) {
         console.log(value);// 3 2 1 G O
-    }
+        }
 
-    for-of 循环类型化的数组
+        for-of 循环类型化的数组
 
-    let zxmArray = new Uint8Array([0x00, 0xff]);
+        let zxmArray = new Uint8Array([0x00, 0xff]);
 
-    for (let value of zxmArray) {
-    console.log(value);// 0 255
-    }
-    for-of 循环 Map
-    let zxmMap = new Map();
-    zxmMap.set("a", 3);
-    zxmMap.set("b", 2);
-    zxmMap.set("c", 1);
-    zxmMap.set({
+        for (let value of zxmArray) {
+        console.log(value);// 0 255
+        }
+        for-of 循环 Map
+        let zxmMap = new Map();
+        zxmMap.set("a", 3);
+        zxmMap.set("b", 2);
+        zxmMap.set("c", 1);
+        zxmMap.set({
         d: "address"
-    }, "GO");
+        }, "GO");
 
-    for (let [key, value] of zxmMap) {
+        for (let [key, value] of zxmMap) {
         console.log(value);// 1 2 3 GO
-    }
+        }
 
-    for (let entry of zxmMap) {
+        for (let entry of zxmMap) {
         console.log(entry);// ["a", 1] ["b", 2] ["c", 1] [{d:"address"}, "GO"]
-    }
+        }
 
 
-    for-of 循环 set
+        for-of 循环 set
 
-    let zxmSet = new Set([1, 1, 2, 2, 3, 3]);
+        let zxmSet = new Set([1, 1, 2, 2, 3, 3]);
 
-    for (let value of zxmSet) {
+        for (let value of zxmSet) {
         console.log(value);
-    }
+        }
 
 
 
-    for-of 循环拥有 enumerable 属性的对象,但是并不能直接使用在普通的对象上,如果我们按对象所拥有的属性进行循环,可使用内置的 Object.keys()7 方法
+        for-of 循环拥有 enumerable 属性的对象,但是并不能直接使用在普通的对象上,如果我们按对象所拥有的属性进行循环,可使用内置的 Object.keys()7 方法
 
-    let zxmObj = {
+        let zxmObj = {
         a: 3,
         b: 2,
         c: 1,
         d: "GO"
-    };
+        };
 
-    Object.defineProperty(zxmObj, 'address', {
+        Object.defineProperty(zxmObj, 'address', {
         configurable: false,
         writable: true,
         enumerable: true,
         value: 'Xtep'
-    })
+        })
 
-    for-of 循环生成器 ( generators ) 然鹅微信小程序并不支持 async await 也不支持
-    function* fibonacci() { // a generator function
-    let [prev, curr] = [0, 1];
-    while (true) {
+        for-of 循环生成器 ( generators ) 然鹅微信小程序并不支持 async await 也不支持
+        function* fibonacci() { // a generator function
+        let [prev, curr] = [0, 1];
+        while (true) {
         [prev, curr] = [curr, prev + curr];
         yield curr;
-    }
-    }
+        }
+        }
 
-    for (let n of fibonacci()) {
-    console.log(n);
-    // truncate the sequence at 1000
-    if (n >= 1000) {
+        for (let n of fibonacci()) {
+        console.log(n);
+        // truncate the sequence at 1000
+        if (n >= 1000) {
         break;
-    }
-    }
+        }
+        }
 
 
 5. 命名规范
