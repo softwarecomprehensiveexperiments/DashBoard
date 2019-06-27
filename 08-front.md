@@ -1,4 +1,4 @@
-前端开发规范文档
+## 前端代码规范
 一、WXML 规范
 1. 属性顺序(不必要的情况下)
 
@@ -193,14 +193,14 @@ forEach 过程中 arr.push() arr.pop() arr.shift() arr.unshift() arr.reverse() a
         console.log(value, index);
         return "zxm" + value
     })
-    console.log(tempArr)​​​​​// [ 'zxm3', 'zxm2', 'zxm1', 'zxmGO' ]​​​​​
+    console.log(tempArr)// [ 'zxm3', 'zxm2', 'zxm1', 'zxmGO' ]
 
     function add(num) {
         return num + 10
     }
     let zxmAdd = [3,2,1];
     let tempAdd = zxmAdd.map(add);
-    console.log(tempAdd)//​​​​ ​[ 13, 12, 11 ]​​​​​
+    console.log(tempAdd)//[ 13, 12, 11 ]
 
 
 
@@ -254,8 +254,6 @@ forEach 过程中 arr.push() arr.pop() arr.shift() arr.unshift() arr.reverse() a
         console.log(value);// 3 2 1 GO
     }
 
-
-
     for-of 循环字符串
 
     let zxmString = "321GO";
@@ -264,8 +262,6 @@ forEach 过程中 arr.push() arr.pop() arr.shift() arr.unshift() arr.reverse() a
         console.log(value);// 3 2 1 G O
     }
 
-
-
     for-of 循环类型化的数组
 
     let zxmArray = new Uint8Array([0x00, 0xff]);
@@ -273,11 +269,7 @@ forEach 过程中 arr.push() arr.pop() arr.shift() arr.unshift() arr.reverse() a
     for (let value of zxmArray) {
     console.log(value);// 0 255
     }
-
-
-
     for-of 循环 Map
-
     let zxmMap = new Map();
     zxmMap.set("a", 3);
     zxmMap.set("b", 2);
@@ -293,7 +285,6 @@ forEach 过程中 arr.push() arr.pop() arr.shift() arr.unshift() arr.reverse() a
     for (let entry of zxmMap) {
         console.log(entry);// ["a", 1] ["b", 2] ["c", 1] [{d:"address"}, "GO"]
     }
-
 
 
     for-of 循环 set
@@ -322,12 +313,7 @@ forEach 过程中 arr.push() arr.pop() arr.shift() arr.unshift() arr.reverse() a
         value: 'Xtep'
     })
 
-
-
-   
-
     for-of 循环生成器 ( generators ) 然鹅微信小程序并不支持 async await 也不支持
-
     function* fibonacci() { // a generator function
     let [prev, curr] = [0, 1];
     while (true) {
@@ -452,46 +438,46 @@ forEach 过程中 arr.push() arr.pop() arr.shift() arr.unshift() arr.reverse() a
 
 五、注释规范
 
-    TODO: + 说明：
+TODO: + 说明：
 
-        如果代码中有该标识，说明在标识处有功能代码待编写，待实现的功能在说明中会简略说明。
+如果代码中有该标识，说明在标识处有功能代码待编写，待实现的功能在说明中会简略说明。
 
-    FIXME: + 说明：
+FIXME: + 说明：
 
-        如果代码中有该标识，说明标识处代码需要修正，甚至代码是错误的，不能工作，需要修复，如何修正会在说明中简略说明。
+如果代码中有该标识，说明标识处代码需要修正，甚至代码是错误的，不能工作，需要修复，如何修正会在说明中简略说明。
 
-    XXX: + 说明：
+XXX: + 说明：
 
-        如果代码中有该标识，说明标识处代码虽然实现了功能，但是实现的方法有待商榷，希望将来能改进，要改进的地方会在说明中简略说明。
+如果代码中有该标识，说明标识处代码虽然实现了功能，但是实现的方法有待商榷，希望将来能改进，要改进的地方会在说明中简略说明。
 
-    HACK:+ 说明:
+HACK:+ 说明:
 
-        如果代码中有该标识，说明标识处代码我们需要根据自己的需求去调整程序代码。
+如果代码中有该标识，说明标识处代码我们需要根据自己的需求去调整程序代码。
 
-    UNDONE: + 说明:
+UNDONE: + 说明:
 
-        如果代码中有该标识，说明在标识处有功能代码未写完，未写完的功能在说明中会简略说明。
+如果代码中有该标识，说明在标识处有功能代码未写完，未写完的功能在说明中会简略说明。
 
-    NOTE: + 说明:
+NOTE: + 说明:
 
-        如果代码中有该标识，用来解释说明这个功能的作用。
+如果代码中有该标识，用来解释说明这个功能的作用。
 
-    BUG: + 说明:
+BUG: + 说明:
 
-        如果代码中有该标识，用来标识此处代码有一个问题,问题会简略说明。
+如果代码中有该标识，用来标识此处代码有一个问题,问题会简略说明。
 
-    骆驼式命名法( Camel-Case )又称驼峰式命名法,是电脑程式编写时的一套命名规则(惯例).正如它的名称 CamelCase 所表示的那样,是指混合使用大小写字母来构成变量和函数的名字. ↩︎
+骆驼式命名法( Camel-Case )又称驼峰式命名法,是电脑程式编写时的一套命名规则(惯例).正如它的名称 CamelCase 所表示的那样,是指混合使用大小写字母来构成变量和函数的名字. ↩︎
 
-    可枚举性 enumerable 用来控制所描述的属性,是否将被包括在 for…in 循环之中.如果一个属性的 enumerable 为 false , for-in Object.keys JSON.stringify 将不会取到该属性. ↩︎
+可枚举性 enumerable 用来控制所描述的属性,是否将被包括在 for…in 循环之中.如果一个属性的 enumerable 为 false , for-in Object.keys JSON.stringify 将不会取到该属性. ↩︎
 
-    表示能否通过 delete 删除此属性,能否修改属性的特性,或能否修改把属性修改为访问器属性,如果直接使用字面量定义对象,默认值为 true ↩︎
+表示能否通过 delete 删除此属性,能否修改属性的特性,或能否修改把属性修改为访问器属性,如果直接使用字面量定义对象,默认值为 true ↩︎
 
-    表示该属性是否可枚举,即是否通过 for-in 循环或 Object.keys() 返回属性,如果直接使用字面量定义对象,默认值为 true ↩︎
+表示该属性是否可枚举,即是否通过 for-in 循环或 Object.keys() 返回属性,如果直接使用字面量定义对象,默认值为 true ↩︎
 
-    能否修改属性的值,如果直接使用字面量定义对象,默认值为 true ↩︎
+能否修改属性的值,如果直接使用字面量定义对象,默认值为 true ↩︎
 
-    该属性对应的值,默认为 undefined ↩︎
+该属性对应的值,默认为 undefined ↩︎
 
-    返回一个所有元素为字符串的数组,其元素来自于从给定的 object 上面可直接枚举的属性.这些属性的顺序与手动遍历该对象属性时的一致 ↩︎
+返回一个所有元素为字符串的数组,其元素来自于从给定的 object 上面可直接枚举的属性.这些属性的顺序与手动遍历该对象属性时的一致 ↩︎
 
-    单字之间不以空格断开或连接号或下划线连结,第一个单字首字母采用大写字母,后续单字的首字母亦用大写字母.例如: FirstName LastName ↩︎
+单字之间不以空格断开或连接号或下划线连结,第一个单字首字母采用大写字母,后续单字的首字母亦用大写字母.例如: FirstName LastName ↩︎
