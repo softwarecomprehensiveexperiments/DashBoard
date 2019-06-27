@@ -17,13 +17,13 @@ layout: default
     - 6.3 [Domian Models](06-domain)（领域模型）
     - 6.4 [State Models](06-state)（状态模型）
     - 6.5 [System Sequence Diagrams](06-sequence)（功能模型）
-    - 6.6 [Supplementary Requirements]（补充需求）
+    - 6.6 [Supplementary Requirements](06-supply)（补充需求）
 * 7、[Design](07-designs)（设计说明书）
     - 7.1 UI design（界面设计）
     - 7.2 Database design（数据库设计）
     - 7.3 Interface API design（接口 API 设计）
     - 7.4 Architecture design（架构设计）
-    - 7.5 Usecase design（用例设计）
+    - 7.5 [Usecase design](07-UCdesign)（用例设计）
 * 8、生产规范与指南
     - 8.1 [前端代码规范](08-front)
     - 8.2 [后端代码规范](08-back)
