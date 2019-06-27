@@ -129,59 +129,6 @@
 4. 关于循环
 4.1 forEach
 
-    forEach 是用来循环数组的
-
-    let zxmArray = [3,2,1,"GO"];
-    Array.prototype.sex = "男";
-    Array.prototype.address = function () {
-        let tempArr = this;
-        tempArr.push("Xtep")
-        return tempArr
-    };
-    //correct
-    zxmArray.forEach(function (value, index) {
-        console.log(value);//3 2 1 GO
-    });
-    //correct
-    for (var i = 0; i < zxmArray.length; i++) {
-        console.log(zxmArray[i]);//3 2 1 GO
-    }
-    //correct
-    let zxmMap = new Map();
-    zxmMap.set("a", 3);
-    zxmMap.set("b", 2);
-    zxmMap.set("c", 1);
-    zxmMap.set({
-        d: "address"
-    }, "GO");
-
-    zxmMap.forEach(function (value, key, mapObj) {
-        console.log(value);
-        console.log(key)
-        console.log(mapObj)
-    });
-
-
-    //Not recommended
-    for (var i in zxmArray) {
-        console.log(zxmArray[i]);//3 2 1 GO 男 f(){}
-    }
-
-
-
-    forEach 不支持 break continue
-
-    let zxmArray = [3,2,1,"GO"];
-    zxmArray.forEach(function(value) {
-        console.log(value);
-            // 不能使用break
-            break;
-            //不能使用continue
-            continue;
-    });
-
-
-
 forEach 过程中 arr.push() arr.pop() arr.shift() arr.unshift() arr.reverse() arr.sort() arr.concat() 都可以使用,但是arr.push() 不会改变输出顺序.
 
 4.2 map
