@@ -14,6 +14,7 @@ title: 审计记录
 |   学号   | github-id | 标题                                                         | issue url                                                   |
 | :------: | --------- | ------------------------------------------------------------ | ----------------------------------------------------------- |
 | 16340020 | chenjiff  | [需求审计](https://github.com/moneydoge/moneydoge.github.io/issues/149) | https://github.com/moneydoge/moneydoge.github.io/issues/149 |
+| 16340019 | auhe  | [需求审计](https://github.com/surplus-youyu/Dashboard/issues/19) | https://github.com/surplus-youyu/Dashboard/issues/19 |
 
 ## 2、设计审计
 
@@ -21,6 +22,7 @@ title: 审计记录
 |   学号   | github-id | 标题                                                         | issue url                                                   |
 | :------: | --------- | ------------------------------------------------------------ | ----------------------------------------------------------- |
 | 16340020 | chenjiff  | [UI设计审计](https://github.com/moneydoge/moneydoge.github.io/issues/148) | https://github.com/moneydoge/moneydoge.github.io/issues/148 |
+| 16340019 | auhe  | [UI设计审计](https://github.com/surplus-youyu/Dashboard/issues/18) | https://github.com/surplus-youyu/Dashboard/issues/18 |
 
 ## 审计评分标准
 
