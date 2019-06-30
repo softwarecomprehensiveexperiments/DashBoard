@@ -52,5 +52,5 @@ layout: default
 * X5 Final Report
     - [16340021-CJK](05-CJK)
     - [16340019-auhe(陈泓霖)](05-CHL)
-    - [15331223-socommonguy(卢浩榕)](05-LHR)
+    - [16340019-auhe(陈泓霖)](05-CHL)
     - [小组分工与贡献率说明](X5-con)
