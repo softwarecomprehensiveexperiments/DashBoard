@@ -38,7 +38,7 @@ layout: default
 * X2 [KANBAN](X2-kanban)
 * X3 [auditing-records](x3-auditing)
 * X4 [Tech/Work Report](x4-techniques)
-    - 学号-title
+    - [16340021-CJK](x4-CJK)
 * X5 [Final Report](x5-summary)
-    - 学号-title
+    - [16340021-CJK](x5-CJK)
     - 小组分工与贡献率说明
