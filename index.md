@@ -11,7 +11,7 @@ layout: default
 * 3、[Investigation](03-invest)（项目前期调研/竞品分析）
 * 4、[Vision](04-vision)（项目愿景）
 * 5、[Product Backlog](05-backlog) （产品特性库）
-* 6、[Requirement specification]()（需求规格说明书）
+* 6、[Requirement specification](06-requirement)（需求规格说明书）
     - 6.1 [Usecase Diagram and UML Activity Diagram](06-useCase)（用例图，业务过程/多泳道图）
     - 6.2 [Use Cases](06-activity)（用例+活动图）
     - 6.3 [Domian Models](06-domain)（领域模型）
