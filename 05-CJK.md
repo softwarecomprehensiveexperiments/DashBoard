@@ -30,11 +30,12 @@
 
 # Git Stat
 
-此为前端贡献记录
+此为Dashboard贡献记录
 ![front](images/CJK1.png)
 
 
-此为Dashboard共享记录
+此为前端贡献记录
+
 ![Dashboard](images/CJK2.png)
 ![Dashboard](images/CJK3.png)
 
