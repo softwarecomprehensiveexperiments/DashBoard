@@ -43,4 +43,5 @@ layout: default
     - [16340021-CJK](https://blog.csdn.net/qq_36349285/article/details/93766322)
 * X5 Final Report
     - [16340021-CJK](05-CJK)
+    - [16340019-auhe(陈泓霖)](05-CHL)
     - 小组分工与贡献率说明
