@@ -23,7 +23,7 @@ layout: default
     - 7.2 [Database design](07-DB-design)（数据库设计）
     - 7.3 [Interface API design](07-API-design)（接口 API 设计）
     - 7.4 [Architecture design](07-ARCH-design)（架构设计）
-    - 7.5 [Usecase design](07-UCdesign)（用例设计）
+    - 7.5 [Usecase design](07-UC-design)（用例设计）
 * 8、生产规范与指南
     - 8.1 [前端代码规范](08-front)
     - 8.2 [后端代码规范](08-back)
