@@ -23,7 +23,7 @@ title: 审计记录
 | :------: | --------- | ------------------------------------------------------------ | ----------------------------------------------------------- |
 | 16340020 | chenjiff  | [需求审计](https://github.com/moneydoge/moneydoge.github.io/issues/149) | https://github.com/moneydoge/moneydoge.github.io/issues/148 |
 | 16340019 | auhe  | [需求审计](https://github.com/surplus-youyu/Dashboard/issues/19) | https://github.com/surplus-youyu/Dashboard/issues/18 |
-| 16340019 | auhe  | [需求审计](https://github.com/surplus-youyu/Dashboard/issues/19) | https://github.com/surplus-youyu/Dashboard/issues/22 |
+| 16340021 | ASF  | [需求审计](https://github.com/surplus-youyu/Dashboard/issues/19) | https://github.com/surplus-youyu/Dashboard/issues/22 |
 
 
 ## 审计评分标准
