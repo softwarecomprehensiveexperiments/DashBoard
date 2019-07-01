@@ -53,4 +53,5 @@ layout: default
     - [16340021-CJK](05-CJK)
     - [16340019-auhe(陈泓霖)](05-CHL)
     - [15331223-socommonguy(卢浩榕)](05-LHR)
+    - [16340020-chenjiff(陈吉凡)](05-CJF)
     - [小组分工与贡献率说明](X5-con)
