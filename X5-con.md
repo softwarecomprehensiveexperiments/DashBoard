@@ -81,7 +81,7 @@
 昵称：common89757   
 分工：后端开发，数据库设计  
 完成工作：完成数据库设计，后端DAO层接口设计，书写数据库设计文档  
-![个人贡献][./images/LMX.png]  
+![个人贡献](./images/LMX.png) 
   
 
 ### 组员6
@@ -91,4 +91,4 @@
 昵称：V-idiot   
 分工：产品经理、协助前端开发  
 完成工作：协助前端发布任务界面，需求文档中图片绘制，整理会议记录和项目文档  
-![个人贡献][https://github.com/softwarecomprehensiveexperiments/DashBoard/blob/gh-pages/images/con_ly.png]  
+![个人贡献](https://github.com/softwarecomprehensiveexperiments/DashBoard/blob/gh-pages/images/con_ly.png)
