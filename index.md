@@ -31,12 +31,7 @@ layout: default
     - 8.4 [架构设计、详细设计（BCE方法）到应用程序框架映射指南](08-BCE)
     - 8.5 [部署说明](08-docker)
 * 9、成品展示
-    - 9.1 短视频+展示
-    [登陆]
-    [发布任务](vid/20190701-225937.mp4)
-    [接收并回答](vid/20190701-230645.mp4)
-    [查看任务结果](vid/20190701-231701.mp4)
-    [个人信息](vid/20190701-231914.mp4)
+    - 9.1 [短视频+展示](09-show)
 * X1 meeting-records（会议记录）
     - [inception meeting 1](X1-meeting-1)
     - [inception meeting 2](X1-meeting-2)
