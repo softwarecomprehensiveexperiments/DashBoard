@@ -50,8 +50,8 @@ layout: default
     - [16340019](https://blog.csdn.net/qq_36359560/article/details/94232012)
     - [16340019](https://blog.csdn.net/qq_36359560/article/details/94240616)
 * X5 Final Report
-    - [16340021-CJK](05-CJK)
-    - [16340019-auhe(陈泓霖)](05-CHL)
-    - [15331223-socommonguy(卢浩榕)](05-LHR)
-    - [16340020-chenjiff(陈吉凡)](05-CJF)
+    - [16340021-(陈金坤)](05-CJK)
+    - [16340019-(陈泓霖)](05-CHL)
+    - [15331223-(卢浩榕)](05-LHR)
+    - [16340020-(陈吉凡) + 小组报告](05-CJF)
     - [小组分工与贡献率说明](X5-con)
